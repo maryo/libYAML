@@ -1,4 +1,3 @@
-
 /*
  * Introduction
  * ************
@@ -1030,8 +1029,7 @@ yaml_parser_fetch_next_token(yaml_parser_t *parser)
                 || CHECK(parser->buffer, '&') || CHECK(parser->buffer, '*')
                 || CHECK(parser->buffer, '!') || CHECK(parser->buffer, '|')
                 || CHECK(parser->buffer, '>') || CHECK(parser->buffer, '\'')
-                || CHECK(parser->buffer, '"') || CHECK(parser->buffer, '%')
-                || CHECK(parser->buffer, '@') || CHECK(parser->buffer, '`')) ||
+                || CHECK(parser->buffer, '"') || CHECK(parser->buffer, '%')) ||
             (CHECK(parser->buffer, '-') && !IS_BLANK_AT(parser->buffer, 1)) ||
             (!parser->flow_level &&
              (CHECK(parser->buffer, '?') || CHECK(parser->buffer, ':'))
