@@ -1,0 +1,35 @@
+﻿Build started 30.8.2013 21:22:05.
+     1>Project "D:\Workspace\libYAML\win32\vs2012\yamldll.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         D:\Program Files\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I.. /I../../include /Zi /nologo /W3 /WX- /O2 /Oy- /D HAVE_CONFIG_H /D YAML_DECLARE_EXPORT /D _VC80_UPGRADE=0x0710 /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Build\Release\lib\DLL\\" /Fd"Build\Release\lib\DLL\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\src\api.c ..\..\src\dumper.c ..\..\src\emitter.c ..\..\src\loader.c ..\..\src\parser.c ..\..\src\reader.c ..\..\src\scanner.c ..\..\src\writer.c
+         api.c
+     1>..\..\src\api.c(66): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _strdup. See online help for details.
+                 D:\Program Files\Microsoft Visual Studio 11.0\VC\include\string.h(241) : see declaration of 'strdup'
+         dumper.c
+     1>..\..\src\dumper.c(254): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Program Files\Microsoft Visual Studio 11.0\VC\include\stdio.h(357) : see declaration of 'sprintf'
+         emitter.c
+         loader.c
+         parser.c
+         reader.c
+         scanner.c
+         writer.c
+         Generating Code...
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(1137,5): warning MSB8012: TargetPath(D:\Workspace\libYAML\win32\vs2012\Output\Release\lib\DLL\yamldll.dll) does not match the Linker's OutputFile property value (D:\Workspace\libYAML\win32\vs2012\Output\Release\lib\DLL\yaml.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(1139,5): warning MSB8012: TargetName(yamldll) does not match the Linker's OutputFile property value (yaml). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+       Link:
+         D:\Program Files\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Output\Release\lib\DLL\yaml.dll" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"Output\Release\lib\DLL\yamldll.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /TLBID:1 /DYNAMICBASE:NO /IMPLIB:"Output\Release\lib\DLL\yaml.lib" /MACHINE:X86 /SAFESEH /DLL Build\Release\lib\DLL\api.obj
+         Build\Release\lib\DLL\dumper.obj
+         Build\Release\lib\DLL\emitter.obj
+         Build\Release\lib\DLL\loader.obj
+         Build\Release\lib\DLL\parser.obj
+         Build\Release\lib\DLL\reader.obj
+         Build\Release\lib\DLL\scanner.obj
+         Build\Release\lib\DLL\writer.obj
+            Creating library Output\Release\lib\DLL\yaml.lib and object Output\Release\lib\DLL\yaml.exp
+         yamldll.vcxproj -> D:\Workspace\libYAML\win32\vs2012\Output\Release\lib\DLL\yamldll.dll
+     1>Done Building Project "D:\Workspace\libYAML\win32\vs2012\yamldll.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.08
